@@ -8,7 +8,7 @@ import io.github.oraindrop.practice.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @RequiredArgsConstructor
@@ -37,4 +37,5 @@ public class PostsService {
 
         return new PostsResponseDto(posts);
     }
+
 }
